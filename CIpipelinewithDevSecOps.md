@@ -63,6 +63,7 @@ Triggered by:
 * GitHub Release Tag `v1.0.0`
 
 Steps:
+
 6. **Upload Artifact to GCS** (timestamp + Release Tag)
 7. **Docker Build** – Rebuild image for consistency.
 8. **Trivy Scan** – Ensure no vulnerabilities.
