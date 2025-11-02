@@ -40,6 +40,7 @@ Steps:
 Purpose: **Build → Scan → Deploy → Security test on Pre‑Prod.**
 
 Steps:
+
 6. **Upload Artifact to GCS** (timestamp + Git SHA) – Versioned build tracking.
 7. **Docker Build** – Build application container.
 8. **Trivy Vulnerability Scan** – Scan image for CVEs.
