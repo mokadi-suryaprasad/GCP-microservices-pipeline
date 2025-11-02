@@ -44,6 +44,7 @@ Steps:
 8. Trivy image scan
 9. Push to Google Artifact Registry
 10. Update K8s manifests with Git SHA
+    
 CD - ArgoCD auto‑sync deploys to **Development namespace**
 
 ---
@@ -61,6 +62,7 @@ Steps:
 10. Deploy to Pre‑Prod via ArgoCD sync
 11. OWASP ZAP DAST Scan on Pre‑Prod URL
 12. Update manifests with Git SHA
+    
 CD - ArgoCD auto‑sync deploys to **Pre-Prod namespace**
 
 ✅ Pre‑Prod always runs a tested, scanned version.
@@ -81,6 +83,7 @@ Steps:
 8. Trivy scan
 9. Push image to Artifact Registry (tagged)
 10. Update manifests with **Release Tag**
+    
 CD - ArgoCD sync deploys to Production namespace in Production GKE cluster (Release Tag) Triggered by:
 
 ✅ Production runs only on tagged, stable builds.
